@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a78389f4-5142-4008-ba78-af40af55603d" name="Default Changelist" comment="">
+    <list default="true" id="a99acec5-60a8-4ca8-bc1e-da231e8146fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/scikit/Main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/scikit/Main/urls.py" afterDir="false" />
+=======
+>>>>>>> 3b5a7f89c8d148926189b0de486dfed9779a7a55
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +14,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -92,8 +96,17 @@
         <option value="$PROJECT_DIR$/scikit/Main/views.py" />
         <option value="$PROJECT_DIR$/scikit/Main/urls.py" />
       </list>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+>>>>>>> 3b5a7f89c8d148926189b0de486dfed9779a7a55
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-136" />
     <option name="y" value="-8" />
@@ -130,17 +143,12 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+  <component name="ProjectId" id="1S06xBCZ4Aw7gVzn2L81Pp9OCnQ" />
+>>>>>>> 3b5a7f89c8d148926189b0de486dfed9779a7a55
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scikit/Main/migrations" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kobeu\Desktop\django-scikit\scikit\Main" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kobeu\Desktop\django-scikit\scikit\Main\migrations" />
-    </key>
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,14 +167,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a78389f4-5142-4008-ba78-af40af55603d" name="Default Changelist" comment="" />
-      <created>1570516320855</created>
+      <changelist id="a99acec5-60a8-4ca8-bc1e-da231e8146fb" name="Default Changelist" comment="" />
+      <created>1570688409628</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570516320855</updated>
+      <updated>1570688409628</updated>
     </task>
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -246,5 +255,17 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> 3b5a7f89c8d148926189b0de486dfed9779a7a55
   </component>
 </project>
