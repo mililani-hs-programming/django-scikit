@@ -18,7 +18,4 @@ from . import views
 
 urlpatterns = [
     path('', views.Home, name = "Home"),
-    path('<str:Unique_id>/Statistics', views.statistics, name = "statistics"),
-    path('<str:Unique_id>/Graph', views.graph, name = "graph"),
-    path('<str:Unique_id>/', views.statistics, name = "statistics"),
 ]
