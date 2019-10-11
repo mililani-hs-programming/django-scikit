@@ -34,7 +34,7 @@
         <div class="col-12">
           <h1>Mililani High School Coding Club ML .csv Analyzer </h1>
           <p>Welcome to MHS Coding Club's Machine Learning platform. Here you can upload a .csv file with data to analyze.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Upload a .csv »</a></p>
+          <p><button type = "button" class="btn btn-primary btn-lg" onClick="Newfil">Upload a .csv »</button></p>
         </div>
       </div>
     </div>
@@ -83,7 +83,16 @@
     </div>
   </div>
 </section>
-
+	<div id = "files">
+		<form method = "post" name="fil" enctype="multipart/form-data">{% csrf_token %}
+		{{ Form }}
+		<button type="submit" class="opt" name="fil">Submit</button>
+	</div>
+<script>
+	function Newfil() {
+		document.getElementById("fiel").style.display = "block";
+	}
+</script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="../static/js/jquery-3.3.1.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
