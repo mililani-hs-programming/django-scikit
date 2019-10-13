@@ -2,32 +2,37 @@ import sklearn as sk
 import pandas as pd
 import csv
 from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
-#this is garbage program
+
+# this is garbage program, rickroll?
+# input: training csv, unknown csv, training a classifier on train csv, classifying unknown
+# output: classification of unknown as list
 
 class Classifier:
     """Backend for django-scikit project"""
 
-    def load_training_csv(self, dataset):
+    def __init__(self):
+        self.trainingSet ='dat.csv'
+
+    def load_training_csv(self):
         """
         Load CSV into class and train a k-nearest algorithm based on it
         CSVs are assumed to have classification in the first column, and data in the remaining columns
         """
-        #Loads iris datasets, replace load_iris() with a training set
-        #For using iris:
-        dataset=load_iris()
-        #data is the data, target is the results, splits into 3-1 training to test (doesn't take input for target row or whatever)
-        X_train, X_test, y_train, y_test=train_test_split(dataset['data'],dataset['target'], random_state=0)
+        self.X_train=pd.read_csv(self.trainingSet, usecols=['B1', 'C1', 'D1','E1','F1'])
+        self.y_train=pd.read_csv(self.trainingSet, usecols=['A1'])
+        self.knn = KNeighborsClassifier(n_neighbors=3)
+        self.knn.fit(self.X_train, self.y_train.values.ravel())
+        X_new=np.array([[1, 4, 2, 4, 5]])
+        prediction=self.knn.predict(X_new)
+        print(prediction)
         pass
 
     def load_unknown_csv(self, unknownDataset):
         """Run CSV through trained classifier"""
-        #number of neighbors a datapoint is based on
-        knn=KNeighborsClassifier(n_neighbors=3)
-
         pass
 
     def get_classification_list(self):
@@ -38,9 +43,22 @@ class Classifier:
 
     def get_classification_percent(self):
         """Return a dictionary of classification tags and their corresponding percent occurance in unknown CSV"""
+        for x in target:
+            itemTotal = 0
+            for y in results:
+                if x == y:
+                    itemTotal += 1
+            print(x + itemTotal)
         pass
 
+x=Classifier()
+x.load_training_csv()
 
-dataset=load_iris()
-print(dataset.keys())
-print(dataset[''])
+'''
+        self.training=csv.reader(self.trainingSet, delimiter=' ')
+        self.trainingDict=csv.DictReader(self.trainingSet)
+        for row in self.training:
+            print(', '.join(row))
+        for row in self.trainingDict:
+            self.y_train+=row
+'''
